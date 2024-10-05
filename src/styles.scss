@@ -1,0 +1,27 @@
+// variable file import
+@import "../src/assets/theme/variable.scss";
+@import "../src/assets/common-scss/flex.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.green {
+    color: var(--primary) !important;
+}
+
+.dark {
+    color: var(--secondary) !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

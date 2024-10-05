@@ -1,0 +1,20 @@
+<div class="sidebar">
+    <div class="options-wrp">
+        <div class="options mt-5">
+            <ul>
+                <li [ngClass]="menu.active ? 'active-li' : '' " (click)="setActive(menu.title)"
+                    *ngFor="let menu of options;index as i">
+                    <label for="dashboard">
+                        <div class="mt-2">
+                            <img [src]="menu.url" alt="Home">
+                        </div>
+                    </label>
+                    <label for="home">{{menu.title}}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="manager-opt">
+        <img src="../../../assets/icons/person-fill-gear.svg" alt="Manager Options">
+    </div>
+</div>

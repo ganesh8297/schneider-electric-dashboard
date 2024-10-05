@@ -1,0 +1,80 @@
+.sidebar {
+    // background-color: aqua;
+    height: 95vh;
+    width: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .options-wrp {
+        display: flex;
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            // margin: 10px;
+            // padding: 15px;
+            // gap: 20px;
+        }
+
+        img {
+            height: 24px;
+            width: 24px;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 10px;
+            display: flex;
+            margin: 3px -3px;
+        }
+    }
+}
+
+.manager-opt {
+    position: absolute;
+    bottom: 40px;
+    left: 1.7%;
+    margin: auto;
+
+    img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 20px;
+}
+
+
+ul li.active {
+    background-color: #ffff !important;
+    border-right: 3px solid var(--primary);
+    padding: 20px;
+}
+
+input[name="menu"],
+input[name=dropdowns] {
+    display: none;
+}
+
+// input[type=radio]:checked~label {
+//     color: rgb(124, 179, 66);
+// }
+
+input[type=radio]:checked~label>i:first-child {
+    color: rgb(124, 179, 66);
+}
+
+input:not(checked)~label {
+    color: rgb(60, 33, 33);
+}
+
+.active-li {
+    background: #ffff;
+    border-right: 3px solid var(--primary) !important;
+}

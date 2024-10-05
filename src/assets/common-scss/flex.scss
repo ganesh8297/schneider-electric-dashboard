@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+}
+
+.fl-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.fl-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fl-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fl-center-hl-vl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
